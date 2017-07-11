@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  volume: number;
+
+  constructor() {
+    this.volume = 50;
+  }
+
+
+  onSubmit(x) {
+    console.log(x);
+    this.volume = x;
+  }
 }
